@@ -97,7 +97,9 @@ return averageLength;
 }
 
 // Bonus - Iteration #4.1
-function avg() {}
+function avg(){
+
+}
 
 // Iteration #5: Unique arrays
 const wordsUnique = [
@@ -114,7 +116,21 @@ const wordsUnique = [
   'bring'
 ];
 
-function uniquifyArray() {}
+function uniquifyArray(words) {
+
+  if (words.length === 0) {
+    return null;
+  }
+
+  const uniqueArray = [];
+
+  for (let i = 0; i < words.length; i++) {
+    if (uniqueArray.indexOf(words[i]) === -1) {
+      uniqueArray.push(words[i]);
+    }
+  }
+  return uniqueArray;
+}
 
 
 
